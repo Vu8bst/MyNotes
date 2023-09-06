@@ -1,33 +1,54 @@
-﻿Book book = new Book("Programming notes");
-List<Chapter> chapters = new List<Chapter>();
+﻿Page FirstPage = new Page("La, la, la-la Wait 'til I get my money right oh oh oh oh oh");
 
-Chapter variablesChapter = new Chapter("Vars");
-chapters.Add(variablesChapter);
+Page SecondPage = new Page("I had a dream I could buy my way to Heaven When I awoke, I spent that on a necklace");
 
-List<Page> variablesPages = new List<Page>();
-Page variablesPage = new Page(MyNotes.VariablesPageOne);
-Page variablesPageTwo = new Page(MyNotes.VariablesPageTwo);
-variablesPages.Add(variablesPage);
-variablesPages.Add(variablesPageTwo);
+Page ThirdPage = new Page("I told God I'd be back in a second Man, it's so hard not to act reckless");
 
-variablesChapter.Pages = variablesPages;
-book.Chapters = chapters;
+Page FourthPage = new Page("To whom much is given much is tested Get arrested, guess until he get the message");
 
-book.Start();
+Page FifthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page SixthPage = new Page("Bought more jewelry, more Louis V My mama couldn't get through to me");
+ 
+Page SeventhPage = new Page("The drama, people suing me I'm on TV talkin' like it's just you and me");
+
+Page EighthPage = new Page("I'm just saying how I feel, man I ain't one of the Cosby's, I ain't go to Hell, man");
+
+Page NinthPage = new Page("I guess the money should have changed him I guess I should have forgot where I came from");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
+
+Page TenthPage = new Page("I feel the pressure, under more scrutiny And what I do? Act more stupidly");
 
 
 
-// Ved brug af constructor chaining kan vi gøre ovenstående mere læsbart:
-Book book2 = new Book("Programming notes", new List<Chapter>(){
-    new Chapter("Vars", new List<Page>(){
-        new Page(MyNotes.VariablesPageOne),
-        new Page(MyNotes.VariablesPageTwo)
-    }),
-    new Chapter("Unity", new List<Page>(){
-        //new Page(MyNotes.UnityPageOne),
-        //new Page(MyNotes.UnityPageTwo),
-        //new Page(MyNotes.UnityPageThree)
-    })
-});
 
-//book2.Start();
+
+
+Chapter Kapitel1 = new Chapter("Variabler");
+ 
+Kapitel1.Pages.Add(FirstPage);
+Kapitel1.Pages.Add(SecondPage);
+Kapitel1.Pages.Add(ThirdPage);
+
+Kapitel1.Read();
+
+Book mybook = new Book("Can't tell me nothin' -Kanye");
+mynook.chapters.Add(Kapitel1);
+mybook.Start();
+
+Console.ReadLine();

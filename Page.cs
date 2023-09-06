@@ -10,7 +10,7 @@ public class Page
     {
         Console.Clear();
         Console.WriteLine("\nPage contents:");
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.DarkRed;
         Book.WriteLine(Content);
         Console.ResetColor();
     }
